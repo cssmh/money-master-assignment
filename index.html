@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="icon" href="./fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-[#31A5AC] font-medium text-4xl">Money Master</h1>
+    <section class="flex justify-center mt-2 gap-9">
+        <div>
+            <img src="./money-master.png" alt="">
+        </div>
+        <div class="bg-[#F8F8F8] px-20 py-14">
+            <!-- Income -->
+            <div class="text-center items-center mb-3">
+                <h1 class="font-medium mb-3">Income</h1>
+                <h1>Income: <input id="total-income" class="bg-[#DCDCDC] outline-none pl-1" type="number"> </h1>
+            </div>
+            <!-- Income -->
+            <div class="text-center space-y-4">
+                <h1 class="font-medium">Expenses</h1>
+                <h1>Food: <input id="food-cost" class="bg-[#DCDCDC] outline-none pl-1" type="text"></h1>
+                <h1>Rent: <input id="rent-cost" class="bg-[#DCDCDC] outline-none pl-1" type="text"></h1>
+                <h1>Clothes: <input id="clothes-cost" class="bg-[#DCDCDC] outline-none pl-1" type="text"></h1>
+                <button id="calculate-cost" class="bg-[#59A5FF] text-white px-10 py-2">Calculate</button>
+                <p class="font-medium">Total Expenses: <span id="total-expense"></span></p>
+                <p class="font-medium">Balance: <span id="balance"></span></p>
+                
+                <p>Save: <input id="save-value" class="w-20 bg-[#DCDCDC] outline-none pl-1" type="text"> % <button id="btn-save" class="bg-[#59A5FF] text-white px-7 py-1">Save</button> </p>
+                
+                <p class="font-medium">Saving Amount: <span id="saving-amount"></span></p>
+                <p class="font-medium">Remaining Balance: <span id="remaining-balance"></span></p>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
